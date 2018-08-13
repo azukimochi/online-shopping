@@ -59,22 +59,28 @@ function requestPurchase(itemID, availableStock) {
         message: "How many units of this product would you like to purchase?"
     }).then(function(answer) {
         var requestedUnits = answer.units;
-            console.log(`Number of units you requested: ${requestedUnits}`);
+            console.log(`You requested to purchase ${requestedUnits} units of this product.`)
             if (requestedUnits > availableStock) {
-                console.log(`Insufficient quantities!  Try again with another number.  There are only ${availableStock} in stock.`)
+                console.log(`There are not enough in stock!  Try again with another number.  There are only ${availableStock} in stock.`)
             } else {
-                processPurchase()
+                processPurchase(itemID, requestedUnits, availableStock)
             }
         });
 }
 
-function processPurchase() {
-
+function processPurchase(itemID, requestedUnits, availableStock) {
+    var newStock = availableStock - requestedUnits;
+    console.log(`You've purchased the product!  There are now ${newStock} left for ID ${itemID}`);
+    var query = "UPDATE products SET stock_quantity = ? WHERE item_id = ?";
+    connection.query(query, [newStock, itemID], function(err, res) {
+        // the console.log below is to check the results
+        // console.log(res.affectedRows);  
+    });
+    connection.end();
 }
 
 
 
 
 
-// connection.end();
 
