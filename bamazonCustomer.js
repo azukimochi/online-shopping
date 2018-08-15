@@ -61,7 +61,7 @@ function requestPurchase(itemID, availableStock) {
         message: "How many units of this product would you like to purchase?"
     }).then(function(answer) {
         var requestedUnits = answer.units;
-            console.log(`You requested to purchase ${requestedUnits} units of this product.`)
+            console.log(`You requested to purchase ${Math.floor(requestedUnits)} units of this product.`)
             if (requestedUnits > availableStock) {
                 console.log(`There are not enough in stock!  Try again with another number.  There are only ${availableStock} in stock.`)
             } else {
@@ -72,7 +72,7 @@ function requestPurchase(itemID, availableStock) {
 
 //function for processing the order. If there aren't enough units in stock, the order is aborted. If there are enough units in stock, the requested number is subtracted.
 function processPurchase(itemID, requestedUnits, availableStock) {
-    var newStock = availableStock - requestedUnits;
+    var newStock = parseInt(availableStock) - Math.floor(requestedUnits);
     console.log(`You've purchased the product!  There are now ${newStock} left for ID ${itemID}`);
     var query = "UPDATE products SET stock_quantity = ? WHERE item_id = ?";
     connection.query(query, [newStock, itemID], function(err, res) {
