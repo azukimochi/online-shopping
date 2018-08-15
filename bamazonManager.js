@@ -160,11 +160,6 @@ function addProduct() {
             }
         }
         ]).then(function(answer) {
-            console.log("\nBelow are the details of the new product:")
-            console.log(`\nName: ${answer.name}`);
-            console.log(`\nDepartment: ${answer.department}`);
-            console.log(`\nPrice: $${answer.price}`);
-            console.log(`\nStock Quantity: ${(answer.stock)}`);
             connection.query("INSERT INTO products SET ?", 
             {
                 product_name: answer.name,
