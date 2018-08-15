@@ -31,6 +31,7 @@ function readProducts() {
     });
 }
 
+//function for selecting an item to purchase
 function selectID() {
     inquirer
         .prompt({
@@ -51,6 +52,7 @@ function selectID() {
         });
 }
 
+//function for requesting a number of units to purchase
 function requestPurchase(itemID, availableStock) {
     inquirer
     .prompt({
@@ -68,6 +70,7 @@ function requestPurchase(itemID, availableStock) {
         });
 }
 
+//function for processing the order. If there aren't enough units in stock, the order is aborted. If there are enough units in stock, the requested number is subtracted.
 function processPurchase(itemID, requestedUnits, availableStock) {
     var newStock = availableStock - requestedUnits;
     console.log(`You've purchased the product!  There are now ${newStock} left for ID ${itemID}`);
