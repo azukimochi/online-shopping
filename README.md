@@ -1,2 +1,2 @@
 # online-shopping
-![](https://azukimochi.github.io/online-shopping/screenshot_1.png)
+![](https://azukimochi.github.io/online-shopping/images/screenshot_1.png)
