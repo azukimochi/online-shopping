@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
   port: 3306,
   user: "root",
   password: "password",
-  database: "bamazon1"
+  database: "bamazon"
 });
 
 //connecting to mysql database using nodeJS 

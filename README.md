@@ -36,23 +36,56 @@ If you choose to exit the application, *"Goodbye, come again!"* will be logged i
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_8.png)
 
+2. You will then be connected as indicated by the connection id that is logged in your terminal/bash.  A menu will appear in your terminal/bash.  It will prompt you to choose one of four activities:
+
+    *A) View Products for Sale 
+    B) View Low Inventory
+    C) Add to Inventory
+    D) Add New Product*
+
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_9.png)
+
+##### View Products for Sale
+
+All of the products in the inventory will be logged in your terminal/bash.  Their IDs, names, departments, prices, and stock quantities will be logged.  You will then be prompted to either go back to the menu or to exit the application.  
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_10.png)
 
+Below is an example of what it will look like if you go back to the menu. 
+
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_11.png)
+
+If you choose to exit the application instead, *"Goodbye, come again!"* will be logged in your terminal/bash and your connection will end. 
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_12.png)
 
+##### View Low Inventory 
+
+All of the products with fewer than 5 units in stock will be logged in your terminal/bash.  Their IDs, names, departments, prices, and stock quantities will be logged.  You will then be prompted to either go back to the menu or to exit the application.  
+
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_13.png)
+
+##### Add to Inventory 
+
+All of the products on sale will be logged in your terminal/bash. Their IDs, names, departments, prices, and stock quantities will be logged.  You will then be prompted to input the ID of the product to which you want to add more units. 
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_14.png)
 
+If you input an ID that is not a number, there will be no response.  If you input an ID that is a number but does not exist in the inventory, a message will be logged, telling you that it does not exist.  You will then be prompted to input another ID. 
+
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_15.png)
+
+When you input an ID that does exist in the inventory, the product associated with that ID will have its ID, name, department, price, and stock quantity logged in the terminal/bash.  You will then be prompted to input the number of units that you would like to add. 
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_16.png)
 
+If you input a value that is not a number, there will be no response.  When you input a number, the application will process the addition of the units you have indicated.  The ID, stock quantity before the addition, number of requested units, and the new stock quantity will be logged in your terminal/bash. The inventory in the database will be updated to reflect the new stock quantity of the product.  You will then be prompted to either go back to the menu or to exit the application.  
+
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_17.png)
+
+##### Add New Product 
+
+You will be prompted to input the name, department, price, and stock quantity of the product that you would like to add into the inventory.  If the request is successful, *"The product has been added into the inventory!"* will be logged in your terminal/bash and the inventory in the database will be updated to reflect the addition of the new product.  You will then be prompted to either go back to the menu or to exit the application.  
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_18.png)
 
