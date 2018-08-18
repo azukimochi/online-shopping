@@ -1,6 +1,6 @@
 # online-shopping
 
-This is a command line node application that will simulate online shopping (think of Amazon).  You can use the application as a Customer or as a Manager. 
+This is a command line node application that will simulate online shopping (think of Amazon).  You can use the application as a Customer or as a Manager.  The inventory containing the products for sale is stored on a MySQL database and as a Manager/Customer, the transactions you make via the command line will run SQL statements to query, update, or add data to the database.  Essentially, this CLI app is a good starting ground for creating a system to run ecommerce transactions. 
 
 This node application was created using NodeJS, JavaScript, MySQL, and NPM.  You will need to use your Terminal/Bash to make requests and retrieve responses. 
 
