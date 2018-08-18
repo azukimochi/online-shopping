@@ -1,5 +1,11 @@
 # online-shopping
 
+This is a command line node application that will simulate online shopping (think of Amazon).  You can use the application as a Customer or as a Manager. 
+
+This node application was created using NodeJS, JavaScript, MySQL, and NPM.  You will need to use your Terminal/Bash to make requests and retrieve responses. 
+
+The creator of this application is azukimochi and she can be contacted via https://github.com/azukimochi.
+
 ### Using the Application as a Customer
 
 1. Ensure you *git clone* the repository.  If an inventory has not been created yet, reference the *bamazon_schema.sql* file to create the database and table that will be used with MySQL.  This will contain the data that you will be querying.  Use your terminal/bash to *cd* into the directory.  Then, to run the file, you will need to input *node bamazonCustomer.js*.
