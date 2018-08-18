@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
   port: 3306,
   user: "root",
   password: "password",
-  database: "bamazon"
+  database: "bamazon1"
 });
 
 //connecting to mysql database using nodeJS 
@@ -49,8 +49,8 @@ function selectID(productsArr) {
             if (productsArr.includes(parseInt(itemID)) === true) {
                 printRequestedProduct(itemID)
             } else {
-                console.log("\nThat ID doesn't exist. Please try again\n");
-                selectID();
+                console.log("\nThat ID doesn't exist. Please try again.\n");
+                selectID(productsArr);
             }
         });
 }
@@ -85,6 +85,7 @@ function requestPurchase(itemID, availableStock) {
             console.log(`\nYou requested to purchase ${Math.floor(requestedUnits)} units of this product.\n`)
             if (requestedUnits > availableStock) {
                 console.log(`There are not enough in stock!  Try again with another number.  There are only ${availableStock} in stock.\n`)
+                quitOrBuy();
             } else {
                 processPurchase(itemID, requestedUnits, availableStock)
             }
