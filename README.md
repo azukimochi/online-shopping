@@ -2,7 +2,7 @@
 
 ### Using the Application as a Customer
 
-1. Ensure you *git clone* the repository.  Use your terminal/bash to *cd* into the directory.  Then, to run the file, you will need to input *node bamazomCustomer.js*.
+1. Ensure you *git clone* the repository.  If an inventory has not been created yet, reference the *bamazon_schema.sql* file to create the database and table that will be used with MySQL.  This will contain the data that you will be querying.  Use your terminal/bash to *cd* into the directory.  Then, to run the file, you will need to input *node bamazonCustomer.js*.
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_1.png)
 
@@ -29,6 +29,33 @@ If there are not enough units of the requested product in stock, then a message 
 If you choose to exit the application, *"Goodbye, come again!"* will be logged in your terminal/bash and your connection will end. 
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_7.png)
+
+### Using the Application as a Manager
+
+1. Ensure you *git clone* the repository.  If an inventory has not been created yet, reference the *bamazon_schema.sql* file to create the database and table that will be used with MySQL.  This will contain the data that you will be querying.  Use your terminal/bash to *cd* into the directory.  Then, to run the file, you will need to input *node bamazonManager.js*.
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_8.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_9.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_10.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_11.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_12.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_13.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_14.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_15.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_16.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_17.png)
+
+![](https://azukimochi.github.io/online-shopping/images/screenshot_18.png)
+
 
 
 

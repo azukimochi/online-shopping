@@ -82,7 +82,7 @@ function requestPurchase(itemID, availableStock) {
             }
         }).then(function (answer) {
             var requestedUnits = answer.units;
-            console.log(`\nYou requested to purchase ${Math.floor(requestedUnits)} units of this product.\n`)
+            console.log(`\nYou requested to purchase ${Math.floor(requestedUnits)} unit(s) of this product.\n`)
             if (requestedUnits > availableStock) {
                 console.log(`There are not enough in stock!  Try again with another number.  There are only ${availableStock} in stock.\n`)
                 quitOrBuy();
