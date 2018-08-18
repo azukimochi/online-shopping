@@ -2,11 +2,11 @@
 
 ### Using the Application as a Customer
 
-1. Ensure you *git clone* the repository.  Use your terminal/bash to *cd* into the directory.  Then, to run the file, you'll need to input *node bamazomCustomer.js*.
+1. Ensure you *git clone* the repository.  Use your terminal/bash to *cd* into the directory.  Then, to run the file, you will need to input *node bamazomCustomer.js*.
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_1.png)
 
-2. You will then be connected as indicated by the connection id that is logged in your terminal/bash.  All of the products in the inventory will be logged as well.  Their IDs, names, departments, and price will be logged.  You will then be prompted to type in the ID of the product you want to purchase. 
+2. You will then be connected as indicated by the connection id that is logged in your terminal/bash.  All of the products in the inventory will be logged as well.  Their IDs, names, departments, and prices will be logged.  You will then be prompted to type in the ID of the product you want to purchase. 
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_2.png)
 
@@ -18,11 +18,15 @@ When you input an ID that does exist in the inventory, the product associated wi
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_4.png)
 
-4. If you input a value that is not a number, there will be no response.  If you input a number, the application will check to see if there are enough units of that product in stock for you.  If there are enough units, your purchase will be processed.  The inventory will be updated to reflect the new stock quantity for that product. 
+4. If you input a value that is not a number, there will be no response.  If you input a number, the application will check to see if there are enough units of that product in stock for you.  If there are enough units, your purchase will be processed.  The inventory will be updated to reflect the new stock quantity for that product *(eg. The stock_quantity for Kit-Kats goes down from 8 to 7 because you've purchased 1 unit).*
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_5.png)
 
+If there are not enough units of the requested product in stock, then a message will be logged in the terminal/bash.  This message will tell you that there is insufficient stock.  The current stock quantity will also be logged for your reference.  You will then be prompted to either make another purchase request or to exit the application.  
+
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_6.png)
+
+If you choose to exit the application, *"Goodbye, come again!"* will be logged in your terminal/bash and your connection will end. 
 
 ![](https://azukimochi.github.io/online-shopping/images/screenshot_7.png)
 
