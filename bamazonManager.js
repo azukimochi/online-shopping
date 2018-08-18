@@ -143,7 +143,7 @@ function addInventory(itemID, currentStock) {
                 // the console.log below is to check the results
                 // console.log(res.affectedRows);  
             });
-            console.log(`You've added ${Math.floor(requestedUnits)} more units! There are now ${newStock} in stock for ID ${itemID}\n`);
+            console.log(`You've added ${Math.floor(requestedUnits)} more unit(s)! There are now ${newStock} in stock for ID ${itemID}\n`);
             quitOrNot();
         });
 }
